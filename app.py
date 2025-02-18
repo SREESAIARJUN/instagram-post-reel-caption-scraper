@@ -19,7 +19,7 @@ def get_instagram_caption(url):
         post = instaloader.Post.from_shortcode(loader.context, shortcode)
         return post.caption
     except Exception as e:
-        return f"⚠️ Error: {e}"
+        return f"⚠️ Error!!!!!\n\nError Details: {e}"
 
 # Button to fetch caption
 if st.button("📥 Extract Caption"):
